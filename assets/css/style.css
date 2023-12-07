@@ -1,0 +1,45 @@
+:root {
+    --main: white;
+} 
+* {
+    color:blue;
+}
+header {
+    border: solid, 1px, black;
+    margin: 5px;
+    padding: 5px;
+}
+
+aside {
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+}
+
+section {
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+}
+
+div {
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+}
+
+main {
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+} 
+
+.hide {
+display: none;
+}
+
+.history-item {
+    border: solid 1px black;
+    margin: 5px;
+    padding: 5px;
+}
