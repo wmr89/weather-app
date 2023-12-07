@@ -8,6 +8,7 @@ header {
     border: solid, 1px, black;
     margin: 5px;
     padding: 5px;
+    display: block;
 }
 
 aside {
