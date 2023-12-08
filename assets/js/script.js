@@ -10,7 +10,7 @@ let searchCity = function (event) {
     if(!citySearch.value) {
         return null
     } else {
-    let geocodeURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + citySearch.value + "&limit=1&appid=" + apiKey;
+    let geocodeURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + citySearch.value + "&limit=1&appid=" + apiKey;
     fetch(geocodeURL)
         .then(response => response.json())
         .then(result => {
