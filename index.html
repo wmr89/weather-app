@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script
-      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
-      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+        integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <title>Weather App</title>
 </head>
+
 <body>
     <header>
         <h1>Weather App</h1>
     </header>
-    <aside>
-        <section>
-            <form>
-                <h2>Search a city</h2>
-                <input id="cityInput">
-                <button id="searchButton">Search</button>
-            </form>
-        </section>
-        <section>
-            <h2 id="viewHistory">View Search History</h2>
-            <div class="hide" id="history-container">
-                <h2> Search History</h2>
-            <ul id="searchHistory"></ul>
-            </div>
-        </section>
-    </aside>
-    <main>
-        <section>
-            <ul id="day0"></ul>
-            <!-- today -->
-        </section>
-        <div>
-            <section>
+    <div class="main-tile">
+        <aside>
+            <section class="form">
+                <form>
+                    <h2>Search a city</h2>
+                    <input id="cityInput">
+                    <button class="searchButton" id="searchButton">Search</button>
+                </form>
+            </section>
+            <section class="history">
+                <h2 id="viewHistory">View Search History</h2>
+                <div class="hide history-container" id="history-container">
+                    <h2> Search History</h2>
+                    <ul id="searchHistory"></ul>
+                </div>
+            </section>
+        </aside>
+        <main class="weather-tile">
+            <h3 id="city-name"></h3>
+            <h3 class="hide" id="today">Today's Forecast</h3>
+            <section class="future hide">
+                <ul id="day0"></ul>
+                <!-- today -->
+            </section>
+            <h3 class="hide" id="five-day">5-day Forecast</h3>
+            <section class="future hide">
                 <ul id="day1"></ul>
             </section>
-            <section>
+            <section class="future hide">
                 <ul id="day2"></ul>
             </section>
-            <section >
+            <section class="future hide">
                 <ul id="day3"></ul>
             </section>
-            <section>
+            <section class="future hide">
                 <ul id="day4"></ul>
             </section>
-        </div>
-    </main>
+            <section class="future hide">
+                <ul id="day5"></ul>
+            </section>
+        </main>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

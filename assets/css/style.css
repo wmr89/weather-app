@@ -1,46 +1,169 @@
 :root {
-    --main: white;
-} 
-* {
-    color:blue;
+    --light: white;
+    --dark: black;
+    --sky: skyblue;
+    --b1: #03045E;
+    --b2: #023E8a;
+    --b3: #0077B6;
+    --b4: #0096c7;
+    --b5: #00b4d8;
+    --b6: #48CAE4;
+    --b7: #90E0EF;
+    --b8: #ADE8f4;
+    --b9: #CAF0F8;
+    --radius: 15px;
 }
+
 header {
-    border: solid, 1px, black;
-    margin: 5px;
-    padding: 5px;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 2%;
     display: block;
+    text-align: center;
+    border-radius: var(--radius);
+    background-color: var(--b1);
+    color: var(--b9);
+}
+
+body {
+    background-color: var(--b9);
+}
+
+.main-tile {
+    /* border: solid 1px black; */
+    display: inline-flex;
+    width: 96%;
+    background-color: var(--b1);
+    margin: 2%;
+    padding: 1%;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.weather-tile {
+    display: inline-block;
+    width: 80%;
+    background-color: var(--b5);
+    border-radius: var(--radius);
+    margin: 1%;
+    padding: 1%;
+    color: var(--b9);
+}
+
+.future-tiles {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 aside {
-    border: solid 1px black;
-    margin: 5px;
-    padding: 5px;
+    /* border: solid 1px black; */
+    margin: 1%;
+    padding: 1%;
+    width: 20%;
+    background-color: var(--b5);
+    border-radius: var(--radius);
 }
-
-section {
-    border: solid 1px black;
-    margin: 5px;
-    padding: 5px;
-}
-
-div {
-    border: solid 1px black;
-    margin: 5px;
-    padding: 5px;
-}
-
-main {
-    border: solid 1px black;
-    margin: 5px;
-    padding: 5px;
-} 
 
 .hide {
-display: none;
+    display: none;
 }
 
 .history-item {
-    border: solid 1px black;
-    margin: 5px;
-    padding: 5px;
+    margin: 2%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+.form {
+    background-color: var(--b2);
+    border-radius: var(--radius);
+    padding: 5%;
+    color: var(--b9);
+    display: flex-block;
+    text-align: center;
+}
+
+.history {
+    background-color: var(--b2);
+    border-radius: var(--radius);
+    padding: 5%;
+    color: var(--b9);
+    margin: 5%;
+    display: flex-block;
+
+}
+
+.history-container {
+    background-color: var(--b6);
+    border-radius: var(--radius);
+    padding: 5%;
+}
+
+.history-item {
+    background-color: var(--b3);
+    border-radius: var(--radius);
+    padding: 5%;
+}
+
+h2 {
+    margin: 3%;
+}
+
+.present {
+    background-color: var(--b2);
+    padding: 2%;
+    border-radius: var(--radius);
+}
+
+.future {
+    background-color: var(--b2);
+    padding: 3%;
+    border-radius: var(--radius);
+    margin: 3%;
+}
+
+input {
+    width: 75%;
+    align-content: center;
+    margin-bottom: 3%;
+    border-radius: var(--radius);
+}
+.searchButton {
+    border-radius: 50px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--b3);
+    color: var(--b9);
+}
+
+.deleteButton {
+    color: red;
+    background-color: var(--b4);
+    border-radius: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+h3 {
+    font-size: 150%;
+    margin-top: 2%;
+    color: var(--b2);
+}
+
+@media screen and (max-width:768px) {
+.main-tile {
+    flex-direction: column;
+}
+aside {
+    width: 75%;
+}
+}
+    
