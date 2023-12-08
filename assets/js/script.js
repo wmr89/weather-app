@@ -128,7 +128,7 @@ let searchHistoryItem = function(event) {
     if (event.target.matches("li")) {
     let cityString = event.target.textContent;
     city = cityString.slice(0, cityString.length -1)
-     let geocodeURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + apiKey;
+     let geocodeURL = "https://api.openweathermap.org/geo/1.0/direct?q=" + city + "&limit=1&appid=" + apiKey;
      fetch(geocodeURL)
          .then(response => response.json())
          .then(result => {
