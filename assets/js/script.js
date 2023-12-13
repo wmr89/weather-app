@@ -3,7 +3,6 @@ let citySearch = document.getElementById("cityInput");
 let searchButton = document.getElementById("searchButton");
 let searchHistory = document.getElementById("searchHistory");
 let viewHistory = document.getElementById("viewHistory");
-let cityHistory = JSON.parse(localStorage.getItem("cityHistory"));
 
 let searchCity = function (event) {
     event.preventDefault();
@@ -86,6 +85,7 @@ let saveHistory = function () {
 }
 
 let displayHistory = function () {
+    let cityHistory = JSON.parse(localStorage.getItem("cityHistory"));
     searchHistory.innerHTML ="";
     if (!cityHistory || !cityHistory[0]) {
         searchHistory.innerHTML ="";
