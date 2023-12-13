@@ -29,6 +29,4 @@ Once you have search for a city it will be logged in your history so you can sea
 https://openweathermap.org/
 
 ## License
-
 See LICENSE in the REPO
----
